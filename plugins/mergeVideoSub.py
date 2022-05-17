@@ -43,7 +43,7 @@ async def mergeSub(c:Client,cb:CallbackQuery,new_file_name:str):
 			prog = Progress(cb.from_user.id,c,cb.message)
 			file_dl_path = await c.download_media(
 				message=media,
-				file_name=f"./downloads/{str(cb.from_user.id)}/{str(i.message_id)}/vid.mkv",
+				file_name=f"./downloads/{str(cb.from_user.id)}/{str(i.message_id)}/vid.mp4",
 				progress=prog.progress_for_pyrogram,
 				progress_args=(
 					f"🚀 Downloading: `{media.file_name}`",
